@@ -31,7 +31,7 @@ if [ ! -e /usr/local/vesta/data/templates/web/httpd/sk-php${1}.stpl ]; then
     ln -s /usr/local/vesta/data/templates/web/httpd/phpfcgid.stpl /usr/local/vesta/data/templates/web/httpd/sk-php${1}.stpl
 fi
 if [ ! -e /usr/local/vesta/data/templates/web/httpd/sk-php${1}.tpl ]; then
-    ln -s /usr/local/vesta/data/templates/web/httpd/phpfcgid.tpl /usr/local/vesta/data/templates/web/httpd/sk-php${1}.tpl 
+    ln -s /usr/local/vesta/data/templates/web/httpd/phpfcgid.tpl /usr/local/vesta/data/templates/web/httpd/sk-php${1}.tpl
 fi
 if [ -e /etc/opt/remi/php${1}/php.ini ] && [ ! -e /etc/php${1}.ini ]; then
     ln -s /etc/opt/remi/php${1}/php.ini /etc/php${1}.ini
@@ -76,6 +76,8 @@ tput sgr0
     installit 73 7.3
     installit 74 7.4
     installit 80 8.0
+    installit 81 8.1
+    installit 82 8.2
 }
 usage () {
 tput setaf 1
@@ -90,7 +92,7 @@ tput sgr0
 echo "bash $0 all"
 tput setaf 1
     echo "###############################################"
-	echo "Supported Versions: 54, 55, 56, 70, 71, 72, 73, 80"
+	echo "Supported Versions: 54, 55, 56, 70, 71, 72, 73, 80, 81, 82"
     echo "###############################################"
 tput sgr0
 }
@@ -119,9 +121,11 @@ tput sgr0
 			php70) installit 70 7.0 ;;
 			php71) installit 71 7.1 ;;
 			php72) installit 72 7.2 ;;
-            php73) installit 73 7.3 ;;
-            php74) installit 74 7.4 ;;
-            php80) installit 80 8.0 ;;
+      php73) installit 73 7.3 ;;
+      php74) installit 74 7.4 ;;
+      php80) installit 80 8.0 ;;
+			php81) installit 81 8.1 ;;
+			php82) installit 82 8.2 ;;
 			all) all ;;
 	  esac
 done
