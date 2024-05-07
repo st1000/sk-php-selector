@@ -1,3 +1,5 @@
+# VESTA CP PHP Selector Centos PHP8.1 PHP 8.2
+
 # sk-php-selector
 
 PHP selector for centos 6/7
@@ -13,11 +15,11 @@ sk-php-selector3.sh is same as sk-php-selector2.sh but with simplified code, now
 
 bash sk-php-selector2.sh php72
 
-bash sk-php-selector2.sh php80
+bash sk-php-selector3.sh php80
 
-bash sk-php-selector2.sh php81
+bash sk-php-selector3.sh php81
 
-bash sk-php-selector2.sh php82
+bash sk-php-selector3.sh php82
 
 # Or install multiple version
 
